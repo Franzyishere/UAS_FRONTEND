@@ -1,0 +1,104 @@
+/* src/components/Register.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #7e7e7e;
+  margin: 3px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+}
+
+.register-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.5);
+  opacity: 0;
+  transition: transform 2s ease, opacity 0.2s ease;
+  max-width: 100%;
+}
+
+.register-container.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.register-box {
+  width: 285px;
+  height: 340px;
+  padding: 50px;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4c78f1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3c6cf1;
+}
+
+/* Media Query untuk Layar Lebar 768px ke Bawah */
+@media (max-width: 768px) {
+  .register-container {
+    max-width: 100%;
+  }
+
+  .register-box {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .input-group {
+    margin-bottom: 8px;
+    margin-right: 30px;
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

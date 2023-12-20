@@ -1,0 +1,92 @@
+/* Dashboard.css */
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4747ef; /* Sesuaikan dengan warna yang Anda inginkan */
+  color: white;
+}
+
+.logo img {
+  width: 50px; /* Sesuaikan dengan ukuran logo Anda */
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation buttons styling */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.navigation-buttons a {
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Sesuaikan dengan warna yang Anda inginkan */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Banner Slider styling (tambahkan sesuai kebutuhan) */
+.chart-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chart {
+  width: 200px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.chart img {
+  max-width: 100%; /* Batasi lebar gambar agar tidak melebihi ukuran parent */
+  height: 150px;
+}
+
+.top-up-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4c78f1;
+  color: #fff;
+  border: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.top-up-button:hover {
+  border: 1px solid blue;
+  color: black;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .chart-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 5fr));
+    gap: 0px; /* Sesuaikan dengan jarak antar kolom */
+  }
+}
+
+/* ... tambahkan styling lain sesuai kebutuhan */

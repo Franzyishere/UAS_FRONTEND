@@ -1,0 +1,90 @@
+/* Navbar.css */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 100%;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.user-icon {
+  margin-right: 8px;
+}
+.toggle-btn {
+  padding: 5px;
+  display: none; /* Sembunyikan tombol toggle secara default */
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  background: none;
+  border: 1px solid white;
+  margin: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.ms-icon{
+  margin-left: 8px;
+}
+/* Media queries untuk responsivitas */
+@media (max-width: 768px) {
+  .toggle-btn{
+    display: flex;
+  }
+  .menu-links {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .profile-info {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
